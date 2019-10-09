@@ -10,4 +10,5 @@ Gem::Specification.new do |s|
   ]
   s.require_paths = ["lib"]
   s.license       = 'MIT'
+  s.executables << 'nmax_aks'
 end

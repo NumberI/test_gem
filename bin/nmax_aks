@@ -1,0 +1,4 @@
+#!/usr/bin/env ruby
+
+require 'nmax_aks'
+puts Nmax.hi

@@ -1,4 +1,7 @@
 #!/usr/bin/env ruby
 
+$LOAD_PATH.push(File.expand_path('../lib', __dir__))
+
 require 'nmax_aks'
-puts Nmax.hi
+
+Nmax.hi(STDIN,ARGV[0])

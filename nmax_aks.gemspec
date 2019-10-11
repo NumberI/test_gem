@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = %q{nmax_aks}
-  s.version = "0.0.2"
+  s.version = "0.1.0"
   s.date = %q{2019-10-11}
   s.summary = %q{nmax_aks is gem creation testing}
   s.description = "A simple testing creation gem"

@@ -1,18 +1,14 @@
-class Nmax
-  # attr_accessor :count
-
+module Nmax
   def self.hi(input = [], argv = 0)
-    p @count = argv.to_i
+    @count = argv.to_i
     return p "Не ввели количество чисел" if @count == 0
-    p text = input.read.split
+    text = input.read.split
     return p "Нет текста" if text.empty?
-    to_numbers text
+    result = to_numbers text
+    result.empty? ? (return p "Нет чисел") : (return p result)
   end
 
-  private
-  def to_numbers(text)
-    numeric = text.map{ |x| p x.to_i}
-  
-
+  def self.to_numbers(text)
+    text.map{ |x| x.to_i }.reject{ |y| y == 0 }.sort.reverse[ 0..@count - 1 ]
   end
 end

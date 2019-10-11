@@ -8,6 +8,7 @@ module Nmax
     result.empty? ? (return p "Нет чисел") : (return p result)
   end
 
+  private
   def self.to_numbers(text)
     text.map{ |x| x.to_i }.reject{ |y| y == 0 }.sort.reverse[ 0..@count - 1 ]
   end
